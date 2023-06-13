@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div className='right'>
                     <div className='location'><h2>Location</h2></div>
-                    <div><Location /> </div>              
+                    <div className='maps'><Location /> </div>              
                 </div>
             </div>
 
