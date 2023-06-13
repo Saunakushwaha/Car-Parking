@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; 
+import "./index.css";
+import Home from "./routes/Home";
+import Help from "./routes/Help";
+import MyBookings from "./routes/MyBookings";
+import{ Route, Routes} from "react-router-dom"
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [date, setDate] = useState(new Date());
+  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDate(new Date());
+    }, 1000)
+
+    return () => clearInterval(intervalId);
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <p className='clock'>
+      {date.toLocaleTimeString()}
+    
+    <>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/help" element={<Help />}/>
+      <Route path="/myBookings" element={<MyBookings />}/>
+
+      
+    </Routes>
+    </>
+
+    </p>
   );
+
+  
 }
+
+
 
 export default App;
