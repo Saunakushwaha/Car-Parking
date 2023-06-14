@@ -49,12 +49,10 @@ ul{
   width: 1500x;
   margin: left;
   text-align: right;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 20px;
   right: 200%;
-  padding: 0.5rem;
-
-  
-  
+  padding: 0rem;
+ 
 }
 

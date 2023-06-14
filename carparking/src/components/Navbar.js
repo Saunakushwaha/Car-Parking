@@ -1,9 +1,21 @@
 import "./NavbarStyles.css"
-import React, { useState} from 'react'
+import React, { useState, useEffect}  from 'react'
 import { Link } from "react-router-dom"
 import { FaBars, FaTimes } from "react-icons/fa";
 
+
 const Navbar = () => {
+
+    const [date, setDate] = useState(new Date());
+  
+   useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDate(new Date());
+    }, 1000)
+
+    return () => clearInterval(intervalId);
+  }, [])
+
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
   return (
@@ -22,7 +34,11 @@ const Navbar = () => {
             <li>
                 <Link to="/help">Help</Link>
             </li>
-            
+            <li>
+            <p className='clock'>
+              {date.toLocaleTimeString()}
+            </p>
+            </li>
          </ul>
          <div className="hamburger" onClick={handleClick}>
             {click ?(
