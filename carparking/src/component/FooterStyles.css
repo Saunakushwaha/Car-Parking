@@ -1,10 +1,10 @@
 .footer{
     width: 100%;
-    height: 16vh;
+    height: 30vh;
     padding: 4rem 0;
-    background-color:black ;
-    position:absolute;
-    top:600px;
+    background-color:rgba(133, 130, 130,0.5);
+    position: fixed;
+    bottom: 0px
 
 }
 .footer-container
@@ -23,26 +23,20 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-left: 5rem;
+   
     color: aliceblue;
 }
 .contactUs
 {
     display: block;
     position: relative;
-    bottom: 67px;
-    line-height: 10%;
-  top:5px;
-  text-align: left;
-  margin-left: 0%;
-   
-    
-    
+    bottom: 70px;
+    line-height: 30px;
   
 }
 .call
 {
-    line-height: 0%;
+    line-height: 25px;
 }
 .call-icon
 {
@@ -51,7 +45,7 @@
 }
 .Email
 {
-    line-height: 0%;
+    line-height: 25px;
 }
 .mail-icon
 {
@@ -64,16 +58,15 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-left: 30rem;
+    margin-left: 36rem;
     color: aliceblue;
     top:1000px;
 } 
 .location
 {       
     position: relative;
-    bottom: 67px;
-    display:block;
-    top:5px;
+    bottom: 75px;
+    
 }
 
 h7{  
@@ -94,13 +87,29 @@ h2{
 .maps
 {
      
-    right: 70px;
-    width: 100%;
+    right: 40px;
+    width: 200px;
     position: relative;
-    bottom: 85px;
-    height: 100%;
-    display:block;
-   margin-top: 10%;
-   top:5px;
+    bottom: 79px;
+    height: 160px;
 }
+@media screen and (max-width: 1040px){
+    .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background: rgba(133, 130, 130, 0.5);
+    position: fixed;
+    bottom: 0;
+    z-index:-3;
+    transition: 0.3s;
+    }
+
+    .right{
+       
+        margin-left: 50%;
+    } 
     
+}
