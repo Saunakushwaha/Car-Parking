@@ -13,12 +13,12 @@ const Footer = () => {
                     <div className='contactUs'>
                         <h2>Contact Us</h2>
                         <div className='call'>
-                            <p><h4>Call us at</h4></p>
+                            <p><h7>Call us at</h7></p>
                             <h4><FontAwesomeIcon icon={faPhone} beatFade className='call-icon' />
                                 +91 223456789</h4>
                         </div>
                         <div className='Email'>
-                            <p><h4>Mail us at</h4></p>
+                            <p><h7>Mail us at</h7></p>
                             <h4><FontAwesomeIcon icon={faEnvelope} beat className='mail-icon' />
                                 asssuu@gmail.com</h4>
                         </div>
