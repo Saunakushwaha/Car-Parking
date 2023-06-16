@@ -8,7 +8,7 @@ import { FaFacebook, FaHome, FaInstagram, FaLinkedinIn, FaMailBulk, FaPhone, FaT
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className="footer">
             <div className="footer-container">
                 <div className='left'>
                     <div className='contactUs'>
