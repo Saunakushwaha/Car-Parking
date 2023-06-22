@@ -2,6 +2,8 @@
 import React from "react"; 
 import "./index.css";
 import Home from "./routes/Home";
+import ParkLater from "./routes/ParkLater";
+import ParkinNow from "./routes/ParkinNow";
 import Help from "./routes/Help";
 import MyBookings from "./routes/MyBookings";
 import{ Route, Routes} from "react-router-dom"
@@ -15,6 +17,8 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/help" element={<Help />}/>
       <Route path="/myBookings" element={<MyBookings />}/>
+      <Route path="/ParkLater" element={<ParkLater />}/>
+      <Route path="/ParkinNow" element={<ParkinNow/>}/>
 
       
     </Routes>

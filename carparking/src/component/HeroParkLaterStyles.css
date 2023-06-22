@@ -1,0 +1,94 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+    background-position: center;
+    object-fit: 50;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    opacity: calc(0.2);
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content-later {
+    height: 90vh;
+    width: 100vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    top: 55%;
+    left:50%;
+    overflow-x: hidden;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(145,145,139,0.7);
+    
+}
+
+
+.hero .content h1 {
+    font-size: 4rem;
+    padding: 1.6rem 1.5rem;
+}
+
+.hero .content p {
+    font-size: 4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.content .btn {
+    margin: 1rem 1.2rem;
+   
+}
+
+.content .btn-light {
+    margin: 1rem 1.2rem;
+}
+.forms{
+    margin-top: 10%;
+   }
+
+.Time-in
+{
+    
+        margin: 'auto';
+        display: 'block';
+        width: 'fit-content';
+}
+.TextField
+{
+    color: aliceblue;
+}
+@media screen and (max-width:1090px) {
+    .hero .content h1 {
+        font-size: 3rem;
+    }
+
+    .hero .content p {
+        font-size: 1.4rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    ;
+
+}
