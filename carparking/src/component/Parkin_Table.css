@@ -1,0 +1,58 @@
+#app {
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+    position: absolute;
+    width: 500px;
+    margin: auto;
+    left: 5%;
+    top: 15%;
+}
+
+
+.grid td {
+  width: 6vh;
+  height: 10vh;
+  padding: 15px 10px;
+  border: 2px solid orange;
+  text-align: center;
+  margin-left: 2px;
+ 
+}
+
+.grid td:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.RE {
+
+  color: #333;
+  display: inline-block;
+  background-color: orange;
+ 
+  
+  
+  
+}
+
+.RE::after {
+  content: 'RE';
+  
+}
+
+.AL::after {
+  content: 'AL'
+}
+
+.AL::after {
+  color: #333;
+}
+
+li {
+  list-style: none;
+}

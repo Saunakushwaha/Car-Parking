@@ -1,0 +1,63 @@
+
+.hero-img{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    height: 80vh;
+    position: relative;
+}
+.hero-img::before
+{
+    content: "";
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:url(https://img.freepik.com/free-vector/underground-car-parking-garage-with-vacant-places_107791-1736.jpg?w=1380&t=st=1687427228~exp=1687427828~hmac=6b454855583090649d468b468d3ec2ae2f430a88d2e7b1b312762f4d46b7a664);
+}
+.heading
+{
+    width: 60%;
+    height: 88%;
+    display: flex;
+    position: absolute;
+    top: 62px;
+    left: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 248, 255,0.8);
+}
+.heading-title{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    
+}
+.icon
+{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    height: 3rem;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+    color: black;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+@media screen and (max-width: 640px)
+{
+    .hero-img h1{
+        font-size: 2rem;
+    }
+    
+}
