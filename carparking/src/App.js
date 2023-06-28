@@ -6,6 +6,7 @@ import ParkLater from "./routes/ParkLater";
 import ParkinNow from "./routes/ParkinNow";
 import Help from "./routes/Help";
 import MyBookings from "./routes/MyBookings";
+import DriveOut from "./routes/DriveOut";
 import{ Route, Routes} from "react-router-dom"
 //import { useState, useEffect } from 'react';
 function App() {
@@ -19,8 +20,7 @@ function App() {
       <Route path="/myBookings" element={<MyBookings />}/>
       <Route path="/ParkLater" element={<ParkLater />}/>
       <Route path="/ParkinNow" element={<ParkinNow/>}/>
-
-      
+      <Route path="/DriveOut" element={<DriveOut />}/>
     </Routes>
     </>
 
